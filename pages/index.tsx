@@ -113,8 +113,8 @@ const Home: React.FC = () => {
       </div>
       <div className="container grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         <div className="container mx-auto p-4 grid grid-cols-3 gap-4">
-          {properties.map((property) => (
-            <PropertyCard key={property.id} property={property} />
+          {properties.map((property, index) => (
+            <PropertyCard key={index} property={property} />
           ))}
         </div>
       </div>
